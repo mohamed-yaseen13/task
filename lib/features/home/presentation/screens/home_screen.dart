@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:task/core/helpers/spacing.dart';
 import 'package:task/features/home/presentation/widgets/home_banner.dart';
 import 'package:task/features/home/presentation/widgets/home_header_row.dart';
+import 'package:task/features/home/presentation/widgets/new_section_row.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -19,6 +20,9 @@ class HomeScreen extends StatelessWidget {
               HomeHeaderRow(),
               verticalSpace(18),
               HomeBanner(),
+              verticalSpace(24),
+              NewSectionRow(sectionText: 'الجلسة القادمة'),
+              verticalSpace(12),
             ],
           ),
         ),
