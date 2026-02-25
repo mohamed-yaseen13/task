@@ -22,6 +22,6 @@ git checkout development
 git merge $currentBranch
 
 # Push development branch
-git push origin development
+git push origin main
 
 Write-Host "✅ Feature branch '$currentBranch' has been merged into 'development' and pushed."
