@@ -5,6 +5,7 @@ import 'package:task/features/home/presentation/widgets/home_banner.dart';
 import 'package:task/features/home/presentation/widgets/home_header_row.dart';
 import 'package:task/features/home/presentation/widgets/new_section_row.dart';
 import 'package:task/features/home/presentation/widgets/products_and_services_row.dart';
+import 'package:task/features/home/presentation/widgets/services_list.dart';
 import 'package:task/features/home/presentation/widgets/sessions_list.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -32,6 +33,13 @@ class HomeScreen extends StatelessWidget {
               NewSectionRow(sectionText: 'تذكيراتي'),
               verticalSpace(12),
               SessionsList(),
+              verticalSpace(12),
+              NewSectionRow(sectionText: 'خدمات جديدا'),
+              verticalSpace(12),
+              ServicesList(),
+              verticalSpace(12),
+              NewSectionRow(sectionText: 'أفضل المنتجات'),
+              verticalSpace(12),
             ],
           ),
         ),
