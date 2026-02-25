@@ -46,4 +46,25 @@ class AppTextStyle {
     fontSize: 14.sp,
     fontWeight: FontWeight.w400,
   );
+
+  static TextStyle gray2Color12FontSize400FontWeight = TextStyle(
+    fontFamily: 'DINNextLTW23',
+    color: Color(0xFF676262),
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w400,
+  );
+
+  static TextStyle blackColor11FontSize400FontWeight = TextStyle(
+    fontFamily: 'DINNextLTW23',
+    color: Colors.black,
+    fontSize: 11.sp,
+    fontWeight: FontWeight.w400,
+  );
+
+  static TextStyle black2Color17FontSize400FontWeight = TextStyle(
+    fontFamily: 'DINNextLTW23',
+    color: Color(0xFF0F0F0F),
+    fontSize: 17.sp,
+    fontWeight: FontWeight.w400,
+  );
 }

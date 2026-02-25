@@ -4,6 +4,8 @@ import 'package:task/core/helpers/spacing.dart';
 import 'package:task/features/home/presentation/widgets/home_banner.dart';
 import 'package:task/features/home/presentation/widgets/home_header_row.dart';
 import 'package:task/features/home/presentation/widgets/new_section_row.dart';
+import 'package:task/features/home/presentation/widgets/products_and_services_row.dart';
+import 'package:task/features/home/presentation/widgets/sessions_list.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -23,6 +25,13 @@ class HomeScreen extends StatelessWidget {
               verticalSpace(24),
               NewSectionRow(sectionText: 'الجلسة القادمة'),
               verticalSpace(12),
+              SessionsList(),
+              verticalSpace(12),
+              ProductsAndServicesRow(),
+              verticalSpace(12),
+              NewSectionRow(sectionText: 'تذكيراتي'),
+              verticalSpace(12),
+              SessionsList(),
             ],
           ),
         ),

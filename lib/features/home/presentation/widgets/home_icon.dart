@@ -4,8 +4,9 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 class HomeIcon extends StatelessWidget {
   final String assetPath;
+  final bool? noPadding;
 
-  const HomeIcon({super.key, required this.assetPath});
+  const HomeIcon({super.key, required this.assetPath, this.noPadding});
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +27,7 @@ class HomeIcon extends StatelessWidget {
       child: GestureDetector(
         onTap: () {},
         child: Padding(
-          padding: EdgeInsets.all(8.sp),
+          padding: EdgeInsets.all(noPadding == true ? 0 : 8.sp),
           child: SvgPicture.asset(assetPath),
         ),
       ),
