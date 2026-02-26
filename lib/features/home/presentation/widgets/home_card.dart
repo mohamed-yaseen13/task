@@ -66,6 +66,12 @@ class HomeCard extends StatelessWidget {
                             textDirection: TextDirection.rtl,
                           ),
                           horizontalSpace(8),
+                          if (!card.repeatingTime.isNullOrEmpty())
+                            Text(
+                              card.repeatingTime!,
+                              style: AppTextStyle
+                                  .gradientColor10FontSize400FontWeight,
+                            ),
                           if (!card.time.isNullOrEmpty())
                             SvgPicture.asset('assets/icons/time.svg'),
                           horizontalSpace(8),

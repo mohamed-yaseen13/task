@@ -7,6 +7,7 @@ class CardEntity {
   final String time;
   final Color? color;
   final String topIconPath;
+  final String? repeatingTime;
 
   CardEntity({
     required this.date,
@@ -15,5 +16,6 @@ class CardEntity {
     required this.time,
     this.color = Colors.white,
     required this.topIconPath,
+    this.repeatingTime,
   });
 }

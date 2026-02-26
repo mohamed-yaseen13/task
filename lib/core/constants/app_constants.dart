@@ -40,10 +40,11 @@ class AppConstants {
 
   static List<CardEntity> reminders = [
     CardEntity(
-      date: 'اليوم - 3 مرات',
+      date: 'اليوم',
       desc: 'باستخدام شنبو هيفين فالي',
       name: 'لا تنس غسول الشعر',
       time: '',
+      repeatingTime: '-3 مرات',
       color: Color(0xFFd7f0d1),
       topIconPath: 'assets/icons/hair_icon.svg',
     ),
@@ -59,7 +60,8 @@ class AppConstants {
       date: 'اليوم',
       desc: 'باستخدام شنبو هيفين فالي',
       name: 'لا تنس غسول الشعر',
-      time: '3 مرات',
+      time: '',
+      repeatingTime: '-3 مرات',
       color: Color(0xFFd7f0d1),
       topIconPath: 'assets/icons/hair_icon.svg',
     ),
