@@ -40,6 +40,7 @@ class HomeScreen extends StatelessWidget {
               verticalSpace(12),
               NewSectionRow(sectionText: 'أفضل المنتجات'),
               verticalSpace(12),
+              ServicesList(),
             ],
           ),
         ),

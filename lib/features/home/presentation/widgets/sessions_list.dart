@@ -21,12 +21,13 @@ class SessionsList extends StatelessWidget {
           itemBuilder: (context, index) {
             return SessionsCard(
               session: SessionEntity(
-                data: '10 اكتوبر',
+                date: '10 اكتوبر',
                 desc: 'علاج تساقط الشعر جهاذ التبريد',
                 name: 'الجلسه الرابعه',
                 time: '2:00 PM',
               ),
               sessionColor: Color(0xFFFFF3F7),
+              topIconPath: 'assets/icons/notification_icon_bold.svg',
             );
           },
         ),
