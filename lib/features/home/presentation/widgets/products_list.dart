@@ -4,8 +4,8 @@ import 'package:task/core/constants/app_constants.dart';
 import 'package:task/core/helpers/spacing.dart';
 import 'package:task/features/home/presentation/widgets/product_and_service_container.dart';
 
-class ServicesList extends StatelessWidget {
-  const ServicesList({super.key});
+class ProductsList extends StatelessWidget {
+  const ProductsList({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,10 +17,10 @@ class ServicesList extends StatelessWidget {
           scrollDirection: Axis.horizontal,
           physics: ScrollPhysics(parent: BouncingScrollPhysics()),
           separatorBuilder: (_, _) => horizontalSpace(18),
-          itemCount: AppConstants.services.length,
+          itemCount: AppConstants.products.length,
           itemBuilder: (context, index) {
             return ProductAndServiceContainer(
-              productOrService: AppConstants.services[index],
+              productOrService: AppConstants.products[index],
             );
           },
         ),
