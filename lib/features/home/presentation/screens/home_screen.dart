@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:task/core/constants/app_constants.dart';
 import 'package:task/core/helpers/spacing.dart';
 import 'package:task/features/home/presentation/widgets/home_banner.dart';
 import 'package:task/features/home/presentation/widgets/home_header_row.dart';
+import 'package:task/features/home/presentation/widgets/home_list.dart';
 import 'package:task/features/home/presentation/widgets/new_section_row.dart';
 import 'package:task/features/home/presentation/widgets/products_and_services_row.dart';
-import 'package:task/features/home/presentation/widgets/products_list.dart';
-import 'package:task/features/home/presentation/widgets/reminders_list.dart';
-import 'package:task/features/home/presentation/widgets/services_list.dart';
-import 'package:task/features/home/presentation/widgets/sessions_list.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -28,21 +26,21 @@ class HomeScreen extends StatelessWidget {
               verticalSpace(24),
               NewSectionRow(sectionText: 'الجلسة القادمة'),
               verticalSpace(12),
-              SessionsList(),
+              HomeList(data: AppConstants.sessions, height: 110),
               verticalSpace(12),
               ProductsAndServicesRow(),
               verticalSpace(12),
               NewSectionRow(sectionText: 'تذكيراتي'),
               verticalSpace(12),
-              RemindersList(),
+              HomeList(data: AppConstants.reminders, height: 110),
               verticalSpace(12),
               NewSectionRow(sectionText: 'خدمات جديدا'),
               verticalSpace(12),
-              ServicesList(),
+              HomeList(data: AppConstants.services, height: 220),
               verticalSpace(12),
               NewSectionRow(sectionText: 'أفضل المنتجات'),
               verticalSpace(12),
-              ProductsList(),
+              HomeList(data: AppConstants.products, height: 220),
             ],
           ),
         ),
