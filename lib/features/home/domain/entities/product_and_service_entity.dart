@@ -12,6 +12,6 @@ class ProductAndServiceEntity {
     required this.price,
     required this.title,
     required this.imagePath,
-    this.color = Colors.white,
+    this.color = const Color(0xFFF7FAFF),
   });
 }

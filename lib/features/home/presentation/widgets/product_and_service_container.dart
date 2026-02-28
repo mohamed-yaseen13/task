@@ -18,11 +18,11 @@ class ProductAndServiceContainer extends StatelessWidget {
         color: productOrService.color,
         borderRadius: BorderRadius.circular(12.r),
         boxShadow: [
-          productOrService.color == Colors.white
+          productOrService.color == Color(0xFFF7FAFF)
               ? BoxShadow(
                   color: Colors.black.withValues(alpha: 0.1),
-                  blurRadius: 20,
-                  offset: const Offset(0, 10),
+                  blurRadius: 10,
+                  offset: const Offset(0, 4),
                 )
               : BoxShadow(),
         ],
