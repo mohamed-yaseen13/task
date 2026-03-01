@@ -16,6 +16,7 @@ class TaskApp extends StatelessWidget {
           theme: ThemeData(
             scaffoldBackgroundColor: Colors.white,
             appBarTheme: AppBarTheme(backgroundColor: Colors.white),
+            fontFamily: 'DINNextLTW23',
           ),
           debugShowCheckedModeBanner: false,
           initialRoute: AppRoutes.homeScreen,
